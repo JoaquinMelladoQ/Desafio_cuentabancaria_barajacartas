@@ -1,3 +1,21 @@
+class User
+    
+    attr_reader :user_name, :account
+
+    def initialize( user_name, account = [])
+        @user_name = user_name
+        @account = account
+    end
+
+    def total_balance
+        sum_total = 0
+        self.account.each do | iter |
+            sum_total += iter.balance
+        end
+        return sum_total
+    end
+
+end
 class BankAccount
 
     attr_accessor :bank_name,
@@ -16,23 +34,5 @@ class BankAccount
 
 end
 
-class User
-    
-    attr_reader :user_name
-
-    def initialize( user_name, account = [])
-        @user_name = user_name
-        @account = account
-    end
-
-    def total_balance
-        sum_total = 0
-        self.account.each do | iter |
-            sum_total += iter.balance
-        end
-        return sum_total
-    end
-
-end
 
 
