@@ -8,9 +8,10 @@ class CardDeck
         @cards = cards
         iter = 0
         while iter < 52
-            cards.push(Card.new(["c", "d", "h", "s"].map!(&:upcase), Random.rand(1...13)))
+            self.cards.push(Card.new(["c", "d", "h", "s"].map!(&:upcase), Random.rand(1...13)))
             iter += 1
         end
+        return cards
     end
 
     def throw_in
@@ -36,4 +37,4 @@ testing = CardDeck.new()
 # puts testing
 # puts testing.throw_in
 # puts testing.take
-puts testing.hand_out
+# puts testing.hand_out
