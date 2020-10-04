@@ -13,5 +13,20 @@ class CardDeck
         end
     end
 
+    def throw_in
+        self.cards.shuffle!
+    end
+
+    def take
+        self.cards.pop
+    end
+
+    def hand_out
+        hand = []
+        5.times do
+            hand.push( self.cards.pop )
+        end
+        return hand
+    end
 
 end
