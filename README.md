@@ -1,4 +1,4 @@
-### Desafío - BankAccount - Card-deck
+## Desafío - BankAccount - Card-deck
 
 ### *Ejercicio 1*
 
@@ -10,8 +10,8 @@ cuenta y el saldo (el saldo por defecto será cero). (1punto)
 + Crear el método transferir
 en la clase Cuenta que reciba un monto y otra cuenta. Este método restará del saldo actual el
 monto y aumentará el saldo de la otra cuenta en el mismo monto (1punto)
-## Tip: es necesario que exista el attr_writer o attr_accessor del saldo para acceder al saldo
-## de la otra cuenta
+#### ip: es necesario que exista el attr_writer o attr_accessor del saldo para acceder al saldo
+#### dela otra cuenta
 + Probar creando dos cuentas cada una con un saldo de 5000 y transferir el total de una cuenta a
 la otra.
 + Crear el constructor de Usuario que reciba el nombre del usuario y un arreglo con al menos 1
