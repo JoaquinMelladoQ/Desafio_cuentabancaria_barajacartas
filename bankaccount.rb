@@ -10,8 +10,8 @@ class BankAccount
     end
     
     def to_transfer( amount, another_account )
-        @balance = self.balance - amount
-        another_account.self.balance = another_account.self.balance + amount
+        self.balance -= amount
+        another_account.self.balance += amount
     end
 
 end
