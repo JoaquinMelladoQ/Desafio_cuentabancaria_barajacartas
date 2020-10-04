@@ -14,7 +14,7 @@ class CardDeck
     end
 
     def throw_in
-        self.cards.shuffle!
+        self.cards.shuffle
     end
 
     def take
@@ -30,3 +30,10 @@ class CardDeck
     end
 
 end
+
+testing = CardDeck.new()
+
+# puts testing
+# puts testing.throw_in
+# puts testing.take
+puts testing.hand_out
