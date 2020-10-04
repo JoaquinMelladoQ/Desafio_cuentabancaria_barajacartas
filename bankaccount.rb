@@ -31,7 +31,7 @@ class BankAccount
     
     def to_transfer( amount, another_account )
         self.balance -= amount
-        another_account.self.balance += amount
+        another_account.balance += amount
     end
 
 end
@@ -43,7 +43,10 @@ puts account_a.bank_name
 puts account_a.number_account
 puts account_a.balance
 
+account_a.to_transfer( 5000, account_b )
 
+puts account_a.balance
+puts account_b.balance
 
 
 
