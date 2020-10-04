@@ -34,7 +34,7 @@ end
 
 testing = CardDeck.new()
 
-# puts testing
-# puts testing.throw_in
-# puts testing.take
-# puts testing.hand_out
+puts testing
+puts testing.throw_in
+puts testing.take
+puts testing.hand_out

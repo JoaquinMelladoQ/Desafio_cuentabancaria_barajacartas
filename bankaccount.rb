@@ -2,7 +2,7 @@ class User
     
     attr_reader :user_name, :account
 
-    def initialize( user_name, account = [])
+    def initialize( user_name, account = [] )
         @user_name = user_name
         @account = account
     end
@@ -36,8 +36,8 @@ class BankAccount
 
 end
 
-account_a = BankAccount.new('Itau_Bank', 7746567, 5000)
-account_b = BankAccount.new('Bci_Bank', 2299845, 5000)
+account_a = BankAccount.new( 'Itau_Bank', 7746567, 5000 )
+account_b = BankAccount.new( 'Bci_Bank', 2299845, 5000 )
 
 puts account_a.bank_name
 puts account_a.number_account
