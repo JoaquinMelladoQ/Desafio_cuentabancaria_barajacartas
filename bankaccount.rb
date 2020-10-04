@@ -48,6 +48,8 @@ account_a.to_transfer( 5000, account_b )
 puts account_a.balance
 puts account_b.balance
 
+user_account = User.new( 'Clemente', [account_a, account_b] )
+puts user_account.total_balance
 
 
 
