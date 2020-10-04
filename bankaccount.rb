@@ -16,6 +16,8 @@ class User
     end
 
 end
+
+
 class BankAccount
 
     attr_accessor :bank_name,
@@ -33,6 +35,16 @@ class BankAccount
     end
 
 end
+
+account_a = BankAccount.new('Itau_Bank', 7746567, 5000)
+account_b = BankAccount.new('Bci_Bank', 2299845, 5000)
+
+puts account_a.bank_name
+puts account_a.number_account
+puts account_a.balance
+
+
+
 
 
 
