@@ -11,10 +11,10 @@ end
 
 # puts card_one.suits
 # Suits : c = clubs d = diamonds h = hearts s = spades
-deck = []
-5.times do
-    deck.push(Card.new(["c", "d", "h", "s"].map!(&:upcase), Random.rand(1...13)))
-end
+# deck = []
+# 5.times do
+#     deck.push(Card.new(["c", "d", "h", "s"].map!(&:upcase), Random.rand(1...13)))
+# end
 
-puts deck[0].suits
-puts deck[1].number
+# puts deck[0].suits
+# puts deck[1].number

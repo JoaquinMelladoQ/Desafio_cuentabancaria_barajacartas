@@ -4,7 +4,7 @@ class CardDeck
 
     attr_accessor :cards
 
-    def initialize( cards = [])
+    def initialize( cards = [] )
         @cards = cards
         iter = 0
         while iter < 52
